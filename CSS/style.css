@@ -4,3 +4,121 @@
     font-family: sans-serif;
     box-sizing: border-box;
 }
+:root{
+    --red_clr: #ff2b2a;
+    --yellow_clr: #fded52;
+}
+/* body{
+    background-color: wheat;
+} */
+.homepage{
+    margin: 50px;
+    background-color: var(--yellow_clr);
+    border-radius: 16px;
+    width: 90%;
+    height: 90vh;
+    position: relative;
+}
+nav{
+    display: flex;
+    justify-content: center;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid black;
+    width: 90%;
+    height: 10vh;
+    position: absolute;
+    top: 20px;
+}
+nav .logo{
+    border: 1px solid black;
+    width: 100px;
+    height: 70px;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #3b2d20;
+    font-weight: 600;
+}
+.slider{
+    margin: 50px;
+    background-color: #fff;
+    border-radius: 16px;
+    width: 50%;
+    height: 50vh;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+}
+
+.menupage{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+    margin: 50px;
+    background-color: var(--red_clr);
+    border-radius: 16px;
+    width: 90%;
+    height: 90vh;
+    position: relative;
+}
+.menupage h1{
+    color: #3b2d20;
+    margin-top: -10px;    
+}
+.show-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px;
+    background-color: #fff;
+    border-radius: 16px;
+    width: 90%;
+    height: 65vh;
+    position: absolute;
+    top: 13%;
+    left: 0%;
+}
+.row1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid black;
+    width: 100%;
+    height: 30%;
+}
+.row2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid black;
+}
+.card-r1{
+    margin: 50px;
+    background-color: var(--yellow_clr);
+    border-radius: 16px;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 13%;
+    left: 0%;
+}
+.card-r2{
+    margin: 50px;
+    background-color: var(--red_clr);
+    border-radius: 16px;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 13%;
+    left: 0%;
+}
