@@ -125,12 +125,39 @@ nav ul li a{
     
 }
 .Gallery{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     margin: 50px;
     background-color: var(--yellow_clr);
     border-radius: 16px;
     width: 90%;
     height: 100vh;
     position: relative;
+}
+.feedback{
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 350px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 16px;
+    position: relative;
+}
+.client_img{
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+    background-color: var(--brown_clr);
+    position: absolute;
+    top: -30px;
+    left: 35%;
+}
+ .feedback P{
+    margin-top: 70px;
+    line-height: 1.5;
+    font-size: 14px;
 }
 .Contact{
     margin: 50px;
