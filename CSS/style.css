@@ -9,16 +9,29 @@
     --yellow_clr: #fded52;
     --brown_clr:#3b2d20;
 }
-/* body{
-    background-color: wheat;
-} */
+body{
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+}
 .homepage{
-    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:-1px;
     background-color: var(--yellow_clr);
-    border-radius: 16px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    margin-top:-5px;
+    /* margin-left:100px; */
     width: 90%;
     height: 100vh;
     position: relative;
+    z-index: 5;
 }
 nav{
     display: flex;
@@ -48,28 +61,50 @@ nav ul li a{
     font-weight: 600;
 }
 .slider{
-    margin: 50px;
+    margin-top:-1px;
     background-color: #fff;
     border-radius: 16px;
     width: 50%;
     height: 50vh;
-    position: absolute;
+    /* position: absolute;
     top: 30%;
-    left: 20%;
+    left: 20%; */
 }
+  .zigzag {
+      position: absolute;
+      bottom: -14px;
+      left: 0;
+      width: 100%;
+      height: 40px;
+      display: block;
+    }
 
+/* .zigzag{
+    position: relative;
+    background: black;
+    height: 50px;
+    clip-path: polygon( 
+         0% 0%, 5% 100%, 10% 0%, 15% 100%, 20% 0%, 
+        25% 100%, 30% 0%, 35% 100%, 40% 0%, 45% 100%, 
+        50% 0%, 55% 100%, 60% 0%, 65% 100%, 70% 0%, 
+        75% 100%, 80% 0%, 85% 100%, 90% 0%, 95% 100%, 
+        100% 0%, 100% 100%, 0% 100%
+);
+z-index: 1;
+} */
 .menupage{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     /* gap: 50px; */
-    margin: 50px;
+    margin-top:-1px;
+    /* margin-left:100px; */
     background-color: var(--red_clr);
-    border-radius: 16px;
     width: 90%;
     height: 100vh;
     position: relative;
+    z-index: 4;
 }
 .menupage h1 h2{
     color: #3b2d20;
@@ -128,12 +163,12 @@ nav ul li a{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 50px;
+    /* margin-left:100px; */
     background-color: var(--yellow_clr);
-    border-radius: 16px;
     width: 90%;
     height: 100vh;
     position: relative;
+    z-index: 3;
 }
 .feedback{
     display: flex;
@@ -142,8 +177,8 @@ nav ul li a{
     height: 350px;
     text-align: center;
     background-color: #fff;
-    border-radius: 16px;
     position: relative;
+    z-index: 2;
 }
 .client_img{
     width: 75px;
@@ -160,17 +195,16 @@ nav ul li a{
     font-size: 14px;
 }
 .Contact{
-    margin: 50px;
+    /* margin-left:100px; */
     background-color: var(--brown_clr);
-    border-radius: 16px;
     width: 90%;
     height: 100vh;
     position: relative;
+    z-index: 1;
 }
 .About{
-    margin: 50px;
+    /* margin-left:100px; */
     background-color: var(--yellow_clr);
-    border-radius: 16px;
     width: 90%;
     height: 100vh;
     position: relative;
