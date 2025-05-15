@@ -1,0 +1,23 @@
+# Fichiers de configuration Docker
+Dockerfile
+.dockerignore
+
+# Node.js (si jamais tu en as)
+node_modules
+npm-debug.log
+yarn-error.log
+
+# OS / éditeurs
+.DS_Store
+Thumbs.db
+.vscode
+.idea
+
+# Git
+.git
+.gitignore
+
+# Autres fichiers temporaires
+*.swp
+*.bak
+*.tmp
