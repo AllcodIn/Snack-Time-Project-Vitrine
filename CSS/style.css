@@ -139,12 +139,11 @@ z-index: 1;
 .menupage h1 h2{
     color: #3b2d20;
 }
-.show-menu{
+/*.show-menu{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    /* gap: 10px; */
     margin: 50px;
     background-color: #fff;
     border-radius: 16px;
@@ -188,6 +187,124 @@ z-index: 1;
     width: 200px;
     height: 200px;
     
+} */
+.items{
+    border: 1px solid black;
+    width: 90%;
+    height: 90%;
+    position: relative;
+}
+.menu_it_rounded{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ccc;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: 2s;
+}
+.menu_it_rounded:hover{
+    scale: 1.2;
+    
+}
+@keyframes move_panini{
+    from{position: absolute; top:40%; left: 48%;}
+    to{position: absolute; top: 5%; left: 48%;}
+}
+
+@keyframes move_burgers{
+    from{position: absolute; top:40%; left: 48%;}
+    to{position: absolute; top: 80%; left: 48%;}
+}
+
+@keyframes move_tacos{
+    from{position: absolute; top:40%; left: 48%;}
+    to{position: absolute; top: 43%; left: 25%;}
+}
+
+@keyframes move_shawarma{
+    from{position: absolute; top:40%; left: 48%;}
+    to{position: absolute; top: 43%; left: 68%;}
+}
+
+@keyframes move_grillades{
+    from{position: absolute; top:40%; left: 48%;}
+    to{position: absolute; top: 13%; left: 63%;}
+}
+
+@keyframes move_poulet_pané{
+    from{position: absolute; top:40%; left: 48%;}
+    to{position: absolute; top: 13%; left: 30%;}
+}
+
+@keyframes move_boissons_alcoolisées{
+    from{position: absolute; top:40%; left: 48%;}
+    to{position: absolute; top: 70%; left: 63%;}
+}
+
+@keyframes move_sucreries_jus_naturels{
+    from{position: absolute; top:40%; left: 48%;}
+    to{position: absolute; top: 70%; left: 30%;}
+}
+
+#panini{
+    position: absolute;
+    top: 5%;
+    left: 48%;
+    animation-name: move_panini;
+    animation-duration: 5s;
+}
+#burgers{
+    position: absolute;
+    top: 80%;
+    left: 48%;
+    animation-name: move_burgers;
+    animation-duration: 5s;
+}
+
+#tacos{
+    position: absolute;
+    top: 43%;
+    left: 25%;
+    animation-name: move_tacos;
+    animation-duration: 5s;
+}
+#shawarma{
+    position: absolute;
+    top: 43%;
+    left: 68%;
+    animation-name: move_shawarma;
+    animation-duration: 5s;
+}
+#grillades{
+    position: absolute;
+    top: 13%;
+    left: 63%;
+    animation-name: move_grillades;
+    animation-duration: 5s;
+}
+#poulet_pané{
+    position: absolute;
+    top: 13%;
+    left: 30%;
+    animation-name: move_poulet_pané;
+    animation-duration: 5s;
+}
+#boissons_alcoolisées{
+    position: absolute;
+    top: 70%;
+    left: 63%;
+    animation-name: move_boissons_alcoolisées;
+    animation-duration: 5s;
+}
+#sucreries_jus_naturels{
+    position: absolute;
+    top: 70%;
+    left: 30%;
+    animation-name: move_sucreries_jus_naturels;
+    animation-duration: 5s;
 }
 .Gallery{
     display: flex;
